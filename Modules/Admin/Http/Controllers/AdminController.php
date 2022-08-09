@@ -10,6 +10,7 @@ use Illuminate\Routing\Controller;
 class AdminController extends Controller
 {
     /**
+     *
      * @return View
      */
     public function index(): View

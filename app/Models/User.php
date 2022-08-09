@@ -15,11 +15,13 @@ class User extends Authenticatable
     protected $table = 'users';
 
     protected $fillable = [
-        'name',
+        'firstname',
+        'lastname',
+        'address',
         'email',
+        'phone',
+        'image',
         'password',
-        'status',
-        'email_verified_at'
     ];
 
     protected static function newFactory(): UserFactory

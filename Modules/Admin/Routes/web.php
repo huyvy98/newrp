@@ -13,6 +13,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('admin')->group(function() {
-    Route::get('/', 'AdminController@index');
-});
+    Route::prefix('admin')->group(function() {
+    Route::get('/', 'UserController@index');
+        Route::get('/add', 'UserController@create');
+        Route::post('/add', 'UserController@store');
+
+    });
